@@ -58,8 +58,7 @@ jobs:
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           application_name: STORE
           environment_name: STORE-env
-          use_existing_version_if_available: true
-          version_label: "ver-${{ github.sha }}-${{ github.run_number }}"
+          version_label: "ver-${{ github.sha }}"
           region: eu-central-1
           deployment_package: deploy.zip
         
